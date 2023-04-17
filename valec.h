@@ -1,30 +1,30 @@
 //
-// Created by pfleg on 15.04.2023.
+// Created by pfleg on 17.04.2023.
 //
 
-#ifndef VALEC_VALEC_H
-#define VALEC_VALEC_H
+#ifndef BEASMRDI_VALEC_H
+#define BEASMRDI_VALEC_H
 #include <iostream>
 
-class Valec {
+class Valec{
 public:
     Valec();
-    Valec(float, float);
+    Valec(double, double);
     Valec(const Valec &);
-    float getPolomer() const;
-    float getVyska() const;
-    float objem() const;
-    float povrch() const;
-    float obsahPlaste() const;
-    float obsahPodstavy() const;
-    void setValec(float, float);
-    bool kontrola(float, float);
-    float vyskaVody(float) const;
+    double getPolomer() const;
+    double getVyska() const;
+    void setValec(double, double);
+    bool kontrola(double, double) const;
+    double objem() const;
+    double povrch() const;
+    double obsahPlaste() const;
+    double obsahPodstavy() const;
+    double vyskaVody(double) const;
 private:
-    float polomer;
-    float vyska;
+    double polomer;
+    double vyska;
 };
 
 std::ostream & operator << (std::ostream &, const Valec &);
 
-#endif //VALEC_VALEC_H
+#endif //BEASMRDI_VALEC_H
