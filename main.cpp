@@ -28,7 +28,7 @@ int main() {
         std::cout << "Obsah plaste valce je: " << v1.obsahPlaste() << " cm2" << std::endl;
         std::cout << "Obsah podstavy valce je: " << v1.obsahPodstavy() << " cm2" << std::endl;
 
-        if(hladina!=0){
+        if(hladina!=0){ //využití ternárního operátoru
             std::cout << "Hladina vody je: " << hladina << " cm" << std::endl;
         }
 
